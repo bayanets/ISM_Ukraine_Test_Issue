@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+/**
+* SaleAction related module
+*
+* @category    YanMalinovsky
+* @package     YanMalinovsky_SaleAction
+* @copyright   Copyright (c) 2015 <yan.malinovsky@gmail.com>
+* @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+*/
+-->
+<config>
+    <modules>
+        <YanMalinovsky_SaleAction>
+            <version>0.1.0</version>
+        </YanMalinovsky_SaleAction>
+    </modules>
+    <global>
+        <blocks>
+            <yanmalinovsky_saleaction>
+                <class>YanMalinovsky_SaleAction_Block</class>
+            </yanmalinovsky_saleaction>
+        </blocks>
+    </global>
+    <frontend>
+        <routers>
+            <yanmalinovsky_saleaction>
+                <use>standard</use>
+                <args>
+                    <module>YanMalinovsky_SaleAction</module>
+                    <frontName>saleaction</frontName>
+                </args>
+            </yanmalinovsky_saleaction>
+        </routers>
+        <layout>
+            <updates>
+                <yanmalinovsky_saleaction>
+                    <file>yanmalinovsky_saleaction.xml</file>
+                </yanmalinovsky_saleaction>
+            </updates>
+        </layout>
+    </frontend>
+</config>
