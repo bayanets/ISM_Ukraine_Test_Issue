@@ -21,6 +21,13 @@
                 <class>YanMalinovsky_SaleAction_Block</class>
             </yanmalinovsky_saleaction>
         </blocks>
+        <resources>
+            <yanmalinovsky_saleaction_setup>
+                <setup>
+                    <module>YanMalinovsky_SaleAction</module>
+                </setup>
+            </yanmalinovsky_saleaction_setup>
+        </resources>
     </global>
     <frontend>
         <routers>
